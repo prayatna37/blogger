@@ -1,0 +1,45 @@
+#app, body {
+  font-family: "Nunito", sans-serif;
+  background: #B9C6FF;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2, .heading-content {
+  text-align: center;
+}
+
+.heading-content {
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.post-information i {
+  font-size: 13px;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-content p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.post-options a {
+  margin-left: 10px;
+}
+
+.post-display {
+  background: lavender;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+@import "variables";
+
+@mixin font($size){
+    font-size: $size;
+
+}
+
+@mixin layout(){
+    font-family: 'Nunito', sans-serif;
+    background: #B9C6FF;
+}
+
+#app{
+    @include layout;
+}
+body{
+    @extend #app;
+}
+
+h1{
+    @include font(60px);
+    text-align: $textAlign;
+}
+h2{
+    text-align: $textAlign;
+}
+
+.heading-content{
+    @include font(15px);
+    @extend h2;
+}
+hr{
+    border: 1px solid black;
+}
+
+.post-information{
+    i{
+        @include font(13px);
+    }
+}
+.blog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        @include font(17px);
+        text-align: justify;
+    }
+}
+.post-options{
+    a{
+        margin-left: $margin;
+    }
+}
+.post-display{
+    background: lavender;
+}
+
